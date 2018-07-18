@@ -1,0 +1,217 @@
+body {
+    overflow-x: hidden;
+}
+#page-wrapper {
+    background-color: #cc2020;
+    .shoes-logo-container{
+        background-color: #ffffff;
+        #shoes-logo {
+            margin: 10px 0px;
+            margin-left: 50px;
+            @media (max-width: 768px) {
+                display: none;
+            }
+        }
+    }
+
+    #float-navbar {
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        background-color: #fff;
+        z-index: 1000;
+        display: none;
+        #main-navbar;
+    }
+
+    #main-navbar {
+        margin-bottom: 0px;
+        .navbar-header{
+            @media (max-width: 768px) {
+                display : flex;
+                align-items : center;
+                justify-content: space-between;          
+            }
+            @media (min-width: 768px) {
+                width: 100px;
+                height: 10px;
+            }         
+            .navbar-brand {
+                height: auto;
+                padding: 15px 5px;
+                width: 270px;
+                display:none;
+                @media (min-width: 768px) {
+                    margin-left: -15px;
+                }   
+                @media (max-width: 768px) {
+                    display: inline-block;
+                }
+            }
+            .navbar-toggle {
+                float: none;
+            }
+        }
+        .navbar-collapse{
+            overflow: hidden;
+            .navbar-nav {
+                margin-bottom: -1px;
+                .dropdown{
+                    .dropdown-menu {
+                        width: auto;
+                        padding: 5px;
+                        min-width: 100px;
+                        a {
+                            padding: 3px 10px;
+                            margin: 0px auto;
+                            @media (max-width: 768px) {
+                                margin-left: 15px;
+                            }   
+                        }
+                    } 
+                }
+                .open {
+                    background-color: #fff;
+                }
+                li {
+                font-family: Times;
+                font-size: 20px;
+                width: auto;
+                    a:hover {
+                        background-image: none;
+                        background-color: #eb4f4f;
+                        color: #fff;
+                    }
+                }
+                .selected {
+                    background-color: #F16D23;
+                    >a {
+                        color: #fff;
+                    }
+                }
+                .active{
+                    a, a:focus, a:hover {
+                        background-image: none;
+                        background-color: #cc2020;
+                        color: #fff;
+                    }
+                    .dropdown-menu {
+                        a {
+                            background-color: white;
+                            color: #777;
+                        }
+                        a:focus, a:hover {
+                            background-image: none;
+                            background-color: #eb4f4f;
+                            color: #fff;
+                        }
+                    }   
+                }
+            }
+        }
+
+    }
+
+    #main-carousel {
+        max-height: 400px;
+        overflow: hidden;
+        position: relative;
+        .carousel-inner {
+            max-height: 400px;
+            overflow: hidden; 
+            img {
+                width: 100%;
+                height: auto;
+                @media screen and (min-width: 1000px) {
+                    margin-top: -130px;
+                } 
+            }
+        }
+        .title-carousel {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(10, 10, 10, 0.801);
+            z-index: 999;
+            height: 70%;
+            width: 70%;
+            text-align: center;
+            color: #fff;
+            @media screen and (max-width: 660px) {
+                height: 85%;
+                width: 85%;
+            } 
+            h1{
+                font-size: 70px;
+                font-family: Times;
+                margin: 50px 0;
+                @media screen and (max-width: 768px) {
+                    font-size: 60px;
+                } 
+                @media screen and (max-width: 525px) {
+                    font-size: 40px;
+                } 
+            }
+            p{
+                font-size: 25px;
+                font-family: Georgia, serif;
+                border-top: 1px solid #fff;
+                border-bottom: 1px solid #fff;
+                @media screen and (max-width: 768px) {
+                    font-size: 18px;
+                } 
+    
+            }
+        }
+    }
+
+    #content-wrapper {
+        margin: 25px 0px;
+        display: none;
+        color: #fff;
+        .about-container, .contact-container {
+            color: #fff;
+            font-family: Verdana, Geneva, sans-serif;
+        }
+        .product-container {
+            color: #fff;
+            font-family: Verdana, Geneva, sans-serif;
+            .product-filter {
+                padding: 10px;
+                background-color: #7c7575;
+            }
+            .product-list {
+                padding: 0 50px;
+                .shoe-container {
+                    background-color:  #eb4f4f;
+                    margin: 10px;
+                    padding: 10px;
+                    width: 200px;
+                    height: 300px;
+                    text-align: center;
+                    display: inline-block;
+                    cursor: pointer;
+                    img {
+                        width: 170px;
+                        height: 200px;
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        background-color: #000;
+        padding: 30px;
+        font-family: Georgia, serif;
+        a {
+            color: #fff;
+            text-decoration: underline;
+        }
+        .footer-logo {
+            padding: 20px;
+            background-color: #fff;
+        }
+    }    
+}

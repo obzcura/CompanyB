@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="Shoes,Company B,Footwear">
+  <meta name="author" content="Jayrome Balicol">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="img/shoes.ico">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="js/slimScroll/jquery.slimscroll.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.6/sweetalert2.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.6/sweetalert2.min.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
+
+  <link rel="stylesheet" href="CompanyB.css">
+  <script src="CompanyB.js"></script>
+<title>
+Company B - Shoes for Everyone 
+</title>
+</head>
+<body>
+  <div id="page-wrapper">
+      <nav class="navbar navbar-default" id="float-navbar">
+          <div class="container-fluid">
+              <div class="navbar-header">
+                  <a href="./index.html">
+                      <img src="img/shoes.png" alt="" class="navbar-brand"  title="Company B Shoes">
+                  </a>
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-2" aria-expanded="false" id="nav-menu-button">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+              </div>
+              <div id="navbar-2" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+                  <ul class="nav navbar-nav">
+                      <li class="active" data-nav="home"><a href="#">Home</a></li>
+                      <li data-nav="about"><a href="#">About</a></li>
+                      <li class="dropdown" data-nav="products">
+                          <a class="dropdown-toggle" href="#">Products
+                          <span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                            <li data-nav="men"><a href="#">Male</a></li>
+                            <li data-nav="women"><a href="#">Female</a></li>
+                            <li data-nav="kid"><a href="#">Children</a></li>
+                          </ul>                    
+                      </li>
+                      <li data-nav="contacts"><a href="#">Contacts</a></li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+      <div class="row">
+        <div class="col-sm-12 shoes-logo-container">
+            <a href="./index.html">
+                <img src="img/shoes.png" class="img-responsive" id="shoes-logo" title="Company B Shoes">
+            </a>
+        </div>
+        <div class="col-sm-12">
+          <nav class="navbar navbar-default" id="main-navbar">
+              <div class="container-fluid">
+                  <div class="navbar-header">
+                      <a href="./index.html">
+                          <img src="img/shoes.png" alt="" class="navbar-brand"  title="Company B Shoes">
+                      </a>
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-1" aria-expanded="false" id="top-menu-button">
+                          <span class="sr-only">Toggle navigation</span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                      </button>
+                  </div>
+                  <div id="navbar-1" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+                      <ul class="nav navbar-nav">
+                          <li class="active" data-nav="home"><a href="#">Home</a></li>
+                          <li data-nav="about"><a href="#">About</a></li>
+                          <li class="dropdown" data-nav="products">
+                              <a class="dropdown-toggle" href="#">Products
+                              <span class="caret"></span></a>
+                              <ul class="dropdown-menu">
+                                  <li data-nav="men"><a href="#">Male</a></li>
+                                  <li data-nav="women"><a href="#">Female</a></li>
+                                  <li data-nav="kid"><a href="#">Children</a></li>
+                              </ul>                    
+                          </li>
+                          <li data-nav="contacts"><a href="#">Contacts</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </nav>
+        </div>
+        <div class="col-sm-12">
+            <div id="main-carousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <!-- <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                </ol> -->
+                    
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="img/shoes1.jpg" alt="shoes1" class="img-responsive">
+                    </div>
+                
+                    <div class="item">
+                        <img src="img/shoes2.jpg" alt="shoes2" class="img-responsive">
+                    </div>
+                
+                    <div class="item">
+                        <img src="img/shoes3.jpg" alt="shoes3" class="img-responsive">
+                    </div>
+                </div>
+
+                <div class="title-carousel">
+                    <h1>Company B</h1>
+                    <p>Shoes for Everyone</p>
+                </div>
+                <!-- Left and right controls -->
+                <!-- <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a> -->
+            </div>
+        </div>
+      </div>
+      <div id="content-wrapper">
+
+      </div>
+      <footer>
+          <div class="row">
+              <div class="col-sm-2">
+              </div>
+              <div class="col-sm-8">
+                  <div class="col-sm-4">
+                      <h4 style="color:#fff;">About Company B</h4>
+                      <p style="color:#fff;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam convallis magna ut lectus rhoncus ultricies. Fusce a risus vitae turpis suscipit maximus.</p>
+                      <p style="color:#fff;"><a href="javascript:void(0);" class="more-info">>MORE INFO</a></p>
+                      <p style="color:#fff;">© 2018 - Company B</p>
+                  </div>
+                  <div class="col-sm-4">
+                      <h4 style="color:#fff;">Social Media</h4>
+                      <ul style="color:#fff;list-style-type: none;padding:0px">
+                          <li><img src="http://westchasedistrictfarmersmarket.com/wp-content/uploads/Facebook-Icon.png" style="width:25px;"> Facebook</li>
+                          <li><img src="http://icons.iconarchive.com/icons/limav/flat-gradient-social/256/Twitter-icon.png" style="height:25px;"> Twitter</li>
+                          <li><img src="https://maxcdn.icons8.com/Color/PNG/512/Logos/instagram_new-512.png" style="height:25px;"> Instagram</li>
+                          <li><img src="http://icons.iconarchive.com/icons/graphics-vibe/classic-3d-social/256/youtube-icon.png" style="height:25px;"> Youtube</li>
+                      </ul>
+                  </div>
+                  <div class="col-sm-4">
+                      <div class="footer-logo"><img src="img/shoes.png" class="img-responsive"></div>
+                  </div>
+              </div>
+              <div class="col-sm-2">
+              </div>
+          </div>
+      </footer>
+  </div>
+</body>
+</html>
